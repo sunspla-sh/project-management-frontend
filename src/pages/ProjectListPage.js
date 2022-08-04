@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 import AddProject from "../components/AddProject";
 
-const API_URL = "http://localhost:5005";
+const API_URL = process.env.REACT_APP_API_URL;
 
 
 function ProjectListPage() {

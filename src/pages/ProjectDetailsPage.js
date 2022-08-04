@@ -5,7 +5,7 @@ import axios from "axios";
 import { Link, useParams } from "react-router-dom";
 import AddTask from "../components/AddTask";
 
-const API_URL = "http://localhost:5005"
+const API_URL = process.env.REACT_APP_API_URL;
 
 function ProjectDetailsPage (props) {
   const [project, setProject] = useState(null);
